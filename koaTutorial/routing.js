@@ -6,7 +6,7 @@ var koa = require('koa');
  /500 - internal server error
  */
 var port = process.argv[2];
-var app = koa();
+var app = new koa();
 
 app.use(function* (next) {
 	if (this.path === '/') {

@@ -1,7 +1,7 @@
 var koa = require('koa');
 
 var port = process.argv[2];
-var app = koa();
+var app = new koa();
 
 // handlers here
 app.use(function *() {
